@@ -14,6 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
