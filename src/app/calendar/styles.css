@@ -76,8 +76,8 @@
   line-height: 44px;
 }
 
-.calendar .day div.before {
-  color: var(--black);
+.calendar .day div.notThisMonth {
+  color: var(--grey);
 }
 
 .calendar .day div.selected {
@@ -87,5 +87,5 @@
 }
 
 .calendar .day div.today {
-  background-color: var(--grey);
+  color: var(--red);
 }
