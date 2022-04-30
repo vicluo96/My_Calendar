@@ -19,6 +19,10 @@ export default function Calendar() {
         <div className="calendar">
             <CalendarHeader value={value} setValue={setValue}/>
             <div className="body">
+                <div className="day-names"></div>{
+                    ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"]
+                    .map((d) => (<div className="week">{d}</div>))
+                }
                 {calendar.map((week) => (
                     <div>
                         {week.map((day) => (

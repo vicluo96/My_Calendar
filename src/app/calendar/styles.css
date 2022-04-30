@@ -18,8 +18,8 @@
 .calendar .day-names {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 2000px;
+  margin: 10 auto;
   align-items: center;
 }
 
@@ -41,13 +41,13 @@
 
 .calendar .week {
   background-color: white;
-  width: calc(100% / 7);
+  width: calc(98% / 7);
   height: 44px;
+  display: inline-block;
   line-height: 44px;
   text-align: center;
-  text-transform: uppercase;
   color: var(--black);
-  font-weight: 400;
+  font-weight: 700;
 }
 .calendar .week div {
   width: 100%;
