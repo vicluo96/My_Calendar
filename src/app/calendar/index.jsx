@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment"
+import "./styles.css";
 
 export default function Calendar() {
     const value = moment()
@@ -16,11 +17,11 @@ export default function Calendar() {
         );
     }
     return (
-        <div>
+        <div className="calendar">
             {calendar.map((week) => (
                 <div>
                     {week.map((day) => (
-                        <div>{day.format("D")}</div>
+                        <div className="day">{day.format("D")}</div>
                     ))}
                 </div>
             ))}
