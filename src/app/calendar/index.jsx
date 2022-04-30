@@ -3,6 +3,7 @@ import moment from "moment"
 import "./styles.css";
 import buildCalendar from "./build";
 import dayStyles from "./style";
+import CalendarHeader from "./header";
 
 export default function Calendar() {
     const [calendar, setCalendar] = useState([]);
@@ -12,34 +13,11 @@ export default function Calendar() {
         setCalendar(buildCalendar(value));
     }, [value])
 
-    function currMonthName() {
-        return value.format("MMMM");
-    }
 
-    function currYear(){
-        return value.format("YYYY");
-    }
-    
-    function prevMonth(){
-        return value.clone().subtract(1, "month");
-    }
-
-    function nextMonth(){
-        return value.clone().add(1, "month");
-    }
 
     return (
         <div className="calendar">
-            <div className="header">
-                <div className="previous"
-                    onClick={() => setValue(prevMonth())}
-                >{String.fromCharCode(139)}</div>
-                <div>{currMonthName()} {currYear()}</div>
-                <div className="next"
-                    onClick={() => setValue(nextMonth())}
-                >{String.fromCharCode(155)}</div>
-
-            </div>
+            <CalendarHeader value={value} setValue={setValue}/>
             <div className="body">
                 {calendar.map((week) => (
                     <div>
