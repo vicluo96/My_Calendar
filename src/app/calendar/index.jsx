@@ -12,21 +12,37 @@ export default function Calendar() {
         setCalendar(buildCalendar(value));
     }, [value])
 
+    function currMonthName() {
+        return value.format("MMMM");
+    }
+
+    function currYear(){
+        return value.format("YYYY");
+    } 
 
 
     return (
         <div className="calendar">
-            {calendar.map((week) => (
-                <div>
-                    {week.map((day) => (
-                        <div className="day" onClick = {() => setValue(day)}>
-                            <div className={dayStyles(day, value)}>
-                                {day.format("D")}
+            <div className="header">
+                <div></div>
+                <div>{currMonthName()} {currYear()}</div>
+                <div></div>
+
+            </div>
+            <div className="body">
+                {calendar.map((week) => (
+                    <div>
+                        {week.map((day) => (
+                            <div className="day" onClick={() => setValue(day)}>
+                                <div className={dayStyles(day, value)}>
+                                    {day.format("D")}
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            ))}
+                        ))}
+                    </div>
+                ))}
+            </div>
+
         </div>
     );
 }

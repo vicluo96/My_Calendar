@@ -1,6 +1,6 @@
 :root {
   --black: rgb(58, 58, 58);
-  --grey: rgb(205, 205, 205);
+  --grey: #eeeeee;
   --white: rgb(240, 240, 240);
   --red: #db3d44;
   --light-blue: rgb(102, 193, 255);

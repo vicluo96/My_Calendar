@@ -5,8 +5,8 @@
 }
 
 .calendar .header {
-  background-color: var(--light-blue);
   text-align: center;
+  justify-content: center;
   min-height: 2rem;
   line-height: 2rem;
   color: var(--black);
@@ -24,7 +24,7 @@
 }
 
 .calendar .body {
-  border: 1px solid var(--light-blue);
+  border: 1px var(--white);
 }
 
 .calendar .header .previous {
