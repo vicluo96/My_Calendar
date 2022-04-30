@@ -67,8 +67,9 @@
 }
 
 .calendar .day div {
-  width: 54px;
+  width: 44px;
   height: 44px;
+  border-radius: 100%;
   position: relative;
   color: var(--black);
   z-index: 100;
@@ -76,7 +77,7 @@
 }
 
 .calendar .day div.before {
-  color: var(--grey);
+  color: var(--black);
 }
 
 .calendar .day div.selected {
