@@ -36,7 +36,7 @@
 .calendar .header .next {
   flex: 1;
   text-align: right;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .calendar .week {

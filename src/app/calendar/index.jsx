@@ -18,15 +18,26 @@ export default function Calendar() {
 
     function currYear(){
         return value.format("YYYY");
-    } 
+    }
+    
+    function prevMonth(){
+        return value.clone().subtract(1, "month");
+    }
 
+    function nextMonth(){
+        return value.clone().add(1, "month");
+    }
 
     return (
         <div className="calendar">
             <div className="header">
-                <div></div>
+                <div className="previous"
+                    onClick={() => setValue(prevMonth())}
+                >{String.fromCharCode(139)}</div>
                 <div>{currMonthName()} {currYear()}</div>
-                <div></div>
+                <div className="next"
+                    onClick={() => setValue(nextMonth())}
+                >{String.fromCharCode(155)}</div>
 
             </div>
             <div className="body">
