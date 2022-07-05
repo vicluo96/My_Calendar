@@ -294,20 +294,6 @@ element of date object
 * [React.js](https://zh-hant.reactjs.org/) - The web framework used
 * [Moment.js](https://momentjs.com/) - The JavaScript library used to get current time
 * [Firebase](https://shorturl.at/qxDHT)- Deploy and host the demo web page
-### Git log
-* one line git log in command line: <br>
-<div>
-    
-
-![](https://i.imgur.com/CrVSyNt.png)
-</div>
-
-* GUI git log by GitKraken: <br>
-
-
-<div>
-<img src="https://i.imgur.com/jgdmzoK.png"/>
-</div>
 
 ### Demo page
 * [MyCalendar](https://my-calendar-demo-691a6.web.app/) 
