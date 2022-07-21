@@ -1,4 +1,3 @@
-# Build a calendar component using ReactJS
 # My Calendar
 <div align="center">
 <img src="https://i.imgur.com/rPPfycf.png"/>
